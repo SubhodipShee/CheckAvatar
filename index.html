@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>ILLUMINATI</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+</head>
+<body>
+
+<section>
+  <h1> Welcome to ILLUMINATI</h1>
+ <h1>WHAT's your Avatar based on your Name !</h1>
+         
+ <div class="centerDiv">
+  <div class="details">
+   <label>ENTER YOUR NAME</label><br>
+   <input type="text" name="" id="nameid">
+  </div>
+
+  <div class="imgdiv">
+   <img src="img1.png" width="200" height="200" class="img1change">
+  </div>
+
+  <button> Click Me</button>
+  
+ </div>
+</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+  $('button').click(function(){
+   const name = $('#nameid').val();
+   alert(name);
+   $('.img1change').attr('src',`https://joesch.moe/api/v1/random${name}`);
+   const b = $('.img1change');
+   console.log(b);
+
+   });
+  });
+</script>
+
+<footer>
+  <div class="text">
+    <span>Created By <a href="#">Subhodip Shee</a> | &#169; 2023 All Rights Reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
